@@ -1,0 +1,32 @@
+/**
+
+	Fonts:
+	1.AEmpirial
+	2.Bello-Script
+	3.LuxuryRoyaleJF
+
+**/
+@font-face { 
+  font-family: 'AEmpirial'; 
+  src: url('../fonts/AEmpirial.woff2') format('woff2'), 
+       url('../fonts/AEmpirial.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/AEmpirial.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'Bello-Script'; 
+  src: url('../fonts/Bello-Script.woff2') format('woff2'), 
+       url('../fonts/Bello-Script.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/Bello-Script.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'LuxuryRoyaleJF'; 
+  src: url('../fonts/LuxuryRoyaleJF.woff2') format('woff2'), 
+       url('../fonts/LuxuryRoyaleJF.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/LuxuryRoyaleJF.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}

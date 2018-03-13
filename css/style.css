@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Arial', sans-serif;
+	font-style: normal;
+	font-size: 1.4rem;
+	color: #373737;
+	font-weight: normal;
+}
