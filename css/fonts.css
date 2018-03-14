@@ -4,8 +4,10 @@
 	1.AEmpirial
 	2.Bello-Script
 	3.LuxuryRoyaleJF
+  4.HelveticaNueueLTStd (have lots of options - look below)
 
 **/
+/* 1.AEmpirial */
 @font-face { 
   font-family: 'AEmpirial'; 
   src: url('../fonts/AEmpirial.woff2') format('woff2'), 
@@ -14,6 +16,7 @@
   font-weight: normal; 
   font-style: normal; 
 }
+/* 2.Bello-Script */
 @font-face { 
   font-family: 'Bello-Script'; 
   src: url('../fonts/Bello-Script.woff2') format('woff2'), 
@@ -22,6 +25,7 @@
   font-weight: normal; 
   font-style: normal; 
 }
+/* 3.LuxuryRoyaleJF */
 @font-face { 
   font-family: 'LuxuryRoyaleJF'; 
   src: url('../fonts/LuxuryRoyaleJF.woff2') format('woff2'), 
@@ -29,4 +33,110 @@
        url('../fonts/LuxuryRoyaleJF.woff') format('woff'); 
   font-weight: normal; 
   font-style: normal; 
+}
+/* 4.HelveticaNueueLTStd */
+/*
+  BdCn(700)    - Bold(700) Condensed
+  BlkCn(900)   - Black(900) Condensed
+  Cn           - Condensed
+  HvCn(600)    - Medium Condensed
+  Lt(300)      - Light
+  LtCn(300)    - Light Condensed
+  LtIt(300)    - Light Italic
+  Th(100)      - Thin
+  ThCn(100)    - Thin Condensed
+  UltLtCn(200) - UltraLight Condensed
+
+  ***Additional***
+  Condensed    - font-stretch
+  Italic       - font-style
+  100,200 etc. - font-weight
+*/
+
+/* BdCn */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-BdCn.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-BdCn.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-BdCn.woff') format('woff'); 
+  font-stretch: condensed;
+  font-weight: 700; 
+}
+
+/* BlkCn */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-BlkCn.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-BlkCn.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-BlkCn.woff') format('woff'); 
+  font-stretch: condensed;
+  font-weight: 900; 
+
+}
+/* Cn */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-Cn.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-Cn.woff') format('woff'); 
+  font-stretch: condensed;
+
+}
+/* Lt */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-Lt.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'); 
+  font-weight: 300; 
+
+}
+/* LtCn */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-LtCn.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-LtCn.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-LtCn.woff') format('woff'); 
+  font-stretch: condensed;
+  font-weight: 300; 
+
+}
+/* LtIt */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-LtIt.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-LtIt.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-LtIt.woff') format('woff'); 
+  font-weight: 300; 
+  font-style: italic; 
+
+}
+/* Th */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-Th.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-Th.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-Th.woff') format('woff'); 
+  font-weight: 100; 
+
+}
+/* ThCn */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-ThCn.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-ThCn.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-ThCn.woff') format('woff'); 
+  font-stretch: condensed;
+  font-weight: 100; 
+
+}
+/* UltLtCn */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-UltLtCn.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-UltLtCn.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-UltLtCn.woff') format('woff'); 
+  font-stretch: condensed;
+  font-weight: 200; 
+
 }
