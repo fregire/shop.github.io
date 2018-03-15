@@ -5,6 +5,7 @@
 	2.Bello-Script
 	3.LuxuryRoyaleJF
   4.HelveticaNueueLTStd (have lots of options - look below)
+  5.Font Awesome
 
 **/
 /* 1.AEmpirial */
@@ -136,6 +137,16 @@
   src: url('../fonts/HelveticaNeueLTStd-UltLtCn.woff2') format('woff2'), 
        url('../fonts/HelveticaNeueLTStd-UltLtCn.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
        url('../fonts/HelveticaNeueLTStd-UltLtCn.woff') format('woff'); 
+  font-stretch: condensed;
+  font-weight: 200; 
+
+}
+/* 5.Font Awesome */
+@font-face { 
+  font-family: 'FontAwesome'; 
+  src: url('../fonts/fontawesome-webfont.woff2') format('woff2'), 
+       url('../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/fontawesome-webfont.woff') format('woff'); 
   font-stretch: condensed;
   font-weight: 200; 
 
