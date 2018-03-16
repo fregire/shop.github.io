@@ -15,9 +15,9 @@
 			<div class="account__care">Custom Care: 888-23-4567</div>
 			<div class="account__settings">
 				<select name="Language" class="option option--list">
-					<option value="">$ US</option>
-					<option value="">$ RU</option>
-					<option value="">$ UA</option>
+					<option class="option__value" value="">$ US</option>
+					<option class="option__value" value="">$ RU</option>
+					<option class="option__value" value="">$ UA</option>
 				</select>
 				<div class="account__my option">
 					<i class="fa fa-user option__user" aria-hidden="true"></i>
@@ -27,25 +27,37 @@
 					<i class="fa fa-search option__icon" aria-hidden="true"></i>
 				</div>
 			</div>
-		</div>
+		</div> <!-- End of section - account -->
 	</div>
-	<!-- TODO: Сделать header - logo, nav, search-->
 	<div class="page__header">
 		<header class="header page__wrapper">
 			<div class="header__left-content">
 				<div class="logo">
-					<!-- Logo -->
+					<a href="#"><img src="img/logo.png" alt=""></a>
 				</div>
-			</div>
+			</div> <!-- end of left-content of header -->
 			<div class="header__right-content">
-				<ul class="nav">
-					<!-- Li -->
+				<ul class="nav header__nav">
+					<li class="nav__item"><a href="#" class="link link--nav">new</a></li>
+					<li class="nav__item"><a href="#" class="link link--nav">designers</a></li>
+					<li class="nav__item"><a href="#" class="link link--nav">women</a></li>
+					<li class="nav__item"><a href="#" class="link link--nav">men</a></li>
+					<li class="nav__item"><a href="#" class="link link--nav">clearence</a></li>
 				</ul>
 				<div class="header__search">
-					<!-- Input -->
+					<form action="#" class="header__form">
+						<input type="text" class="input input--header" placeholder="Your cart">
+					</form>
+					<div class="header__cart">
+						<img src="img/icon-cart.svg" alt="" class="header__icon-cart">
+						<div class="sell">
+							<div class="sell__items"><span>0</span> items</div>
+							<div class="sell__price">$ <span>0</span></div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</header>
+			</div> <!-- end of right-content of header -->
+		</header> <!-- End of section - header -->
 	</div>
 </body>
 </html>

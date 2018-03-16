@@ -6,27 +6,72 @@
 html {
 	font-size: 62.5%;
 }
+/* Some tips to understand my code:
+	1.* ... * - means block
+	2.*** ... *** - start of the new section 
+	3.** ... ** - common blocks of all pages
+	4. __  - an element of the block
+	5. --  modifier of the block/element
+	6. Full structure - block__element--modifier
+*/
+
+/** Common blocks **/
+/* Block - page */
 .page {
-	font-family: 'Arial', sans-serif;
+	color: #373737;
+	font-family: Arial, open-sans, sans-serif;
 	font-style: normal;
 	font-size: 1.4rem;
-	color: #373737;
-	font-weight: normal;
+	line-height: 1.2;
 }
 .page__wrapper {
 	max-width: 970px;
 	margin: 0 auto;
 }
-/* 
-	Blocks:
-	 page
-	 account
-	 option
-	 logo
-	 nav
-*/
 
-/* Account section */
+/* Block - link */
+.link {
+	color: #000;
+	text-decoration: none;
+	
+}
+.link--nav {
+	position: relative;
+}
+.link--nav:after {
+	border: 5px solid transparent;
+	border-top: 5px solid #000;
+	content: '';
+	display: block;
+	height: 0;
+	position: absolute;
+	right: -15px;
+	top: 45%;
+	width: 0;
+}
+
+/* Block - input */
+.input {
+	border: none;
+	border: 1px solid #d6d6d6;
+	font-size: 1.2rem;
+	outline: none;
+	padding: 1rem .9rem;
+	width: 100%;
+}
+.input--header {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+
+/* Block - button */
+.button {
+	background: #fd926d;
+	border-bottom: 3px solid #fd926d;
+}
+
+/*** Account section || Block - account ***/
 .page__account {
 	background: #000;
 	height: 3rem;
@@ -42,18 +87,20 @@ html {
 	display: flex;
 	justify-content: space-between;
 }
+/* Block - option */
 .option {
 	border-left: 1px solid #444;
 	border-right: 1px solid #444;
 	padding: 0 1.4rem;
 }
+.option:hover {
+	cursor: pointer;
+}
 .option--list {
-/*	-moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;*/
-	background: transparent;
+	background: #000;
 	border: none;
 	border-left: 1px solid #444;
+	outline: none;
 	position: relative;
 }
 .option__icon {
@@ -64,8 +111,69 @@ html {
 	color: #666;
 	font-size: 1.5rem;
 }
-
+.option__value {
+	line-height: 60px;
+}
 .account,
 .option--list {
 	color: #fff;
+}
+/*** Header section || Block - header ***/
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	height: 10.6rem;
+}
+.header__left-content {
+	width: 16%;
+}
+.header__right-content {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	width: 83%;
+}
+.header__search {
+	border: 1px solid #d6d6d6;
+	width: 26%;
+}
+.header__cart {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: .6rem;
+}
+.header__nav {
+	margin-right: 2.3rem;
+}
+.header__icon-cart {
+	height: 2rem;
+	width: 2rem;
+}
+
+/* Block - sell */
+.sell {
+	color: #949393;
+	display: flex;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+.sell__items {
+	border-right: 1px solid #c1c0c0;
+	padding-right: .7rem;
+}
+.sell__price {
+	border-left: 1px solid #cecece;
+	padding-left: .7rem; 
+}
+/* Block - nav*/
+.nav {
+	font-size: 1.6rem;
+	list-style: none;
+	padding: 0;
+}
+.nav__item {
+	display: inline-block;
+	padding: 0 1.5rem;
 }
