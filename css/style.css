@@ -1,5 +1,4 @@
 * {
-	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -77,15 +76,23 @@ html {
 	height: 3rem;
 }
 .account {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-size: 1.1rem;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	line-height: 3rem;
 	text-transform: uppercase;
 }
 .account__settings {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 /* Block - option */
 .option {
@@ -105,7 +112,9 @@ html {
 }
 .option__icon {
 	font-size: 1.8rem;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 .option__user {
 	color: #666;
@@ -120,18 +129,30 @@ html {
 }
 /*** Header section || Block - header ***/
 .header {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	height: 10.6rem;
 }
 .header__left-content {
 	width: 16%;
 }
 .header__right-content {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	width: 83%;
 }
 .header__search {
@@ -139,9 +160,15 @@ html {
 	width: 26%;
 }
 .header__cart {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding: .6rem;
 }
 .header__nav {
@@ -155,6 +182,8 @@ html {
 /* Block - sell */
 .sell {
 	color: #949393;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-size: 1.1rem;
 	text-transform: uppercase;
