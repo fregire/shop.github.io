@@ -16,14 +16,17 @@
 			<div class="account__care">Custom Care: 888-23-4567</div>
 			<div class="account__settings">
 				<!-- TODO: Стилизовать select(убрать стрелку) -->
-				<select name="Language" class="option option--list">
-					<option class="option__value" value="">$ US</option>
-					<option class="option__value" value="">$ RU</option>
-					<option class="option__value" value="">$ UA</option>
-				</select>
+				<div class="account__option">
+					<select name="Language" class="option option--list">
+						<option class="option__value" value="">$ US</option>
+						<option class="option__value" value="">$ RU</option>
+						<option class="option__value" value="">$ UA</option>
+					</select>
+				</div>
+				
 				<div class="account__my option">
-					<i class="fa fa-user option__user" aria-hidden="true"></i>
-					<span>My account</span>
+					<img src="img/icon-user.png" class="option__item" alt="">
+					<span class="option__item">My account</span>
 				</div>
 				<div class="account__find option">
 					<i class="fa fa-search option__icon" aria-hidden="true"></i>
@@ -35,7 +38,7 @@
 		<header class="header header--not_desktop page__wrapper">
 			<div class="header__left-content">
 				<div class="logo">
-					<a href="#"><img src="img/logo.png" alt=""></a>
+					<a href="#"><img src="img/logo.svg" class="logo__img" alt=""></a>
 				</div>
 			</div> <!-- end of left-content of header -->
 			<div class="header__right-content">

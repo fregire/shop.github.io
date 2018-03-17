@@ -1,7 +1,4 @@
 @media screen and (max-width: 760px) {
-	html {
-		font-size: 7px;
-	}
 	.page__wrapper {
 		max-width: 96%;
 	}
@@ -14,7 +11,9 @@
 		display: none;
 	}
 	.header__mobile-nav {
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		color: #fff;
 		text-transform: uppercase;
 		font-size: 1.8rem;
@@ -23,8 +22,12 @@
 		height: 4.6rem;
 		margin-top: 2rem;
 		margin-bottom: 1.7rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		width: 100%;
 		position: relative;
 	}
@@ -35,8 +38,9 @@
 		cursor: pointer;
 	}
 	.header__search {
-		width: 30%;
+		width: 21.3rem;
 	}
+	/* Block - nav */
 	.nav--mobile {
 		height: 0;
 		overflow: hidden;
@@ -47,6 +51,8 @@
 		z-index: 99;
 		padding: 0;
 		background: #fd926d;
+		-webkit-transition: all 400ms;
+		-o-transition: all 400ms;
 		transition: all 400ms;
 	}
 	.nav__item {
@@ -55,11 +61,126 @@
 
 	}
 	.nav--mobile_active {
-		height: 23rem;
+		height: 25rem;
 
 	}
 	/*** Slider section ***/
+	.slider__slide {
+		padding: 0 3rem;
+	}
 	.slider__picture{
 		width: 50%;
 	}
+	.slider__title {
+		font-size: 7.1rem;
+	}
+	.slider__descr {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	html {
+		font-size: 15px;
+	}
+	/*** Account section || Block - account ***/
+	.page__account {
+		height: auto;
+
+	}
+	.account {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		font-size: 1.5rem;
+	}
+	.account__settings {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.account__care {
+		background: #fafafa;
+		color: #838383;
+		line-height: 6rem;
+		text-align: center;
+		position: relative;
+		z-index: 999;
+	}
+	.account__care:after,
+	.account__care:before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: #fafafa;
+		position: absolute;
+		top: 0;
+		z-index: -2;
+	}
+	.account__care:before {
+		left: -5%;
+	}
+	.account__care:after {
+		right: -5%;
+	}
+	.account__care,
+	.account__settings {
+		height: 6rem;
+	}
+	.account__my {
+		white-space: nowrap;
+	}
+	.account__option:after {
+		border-width: 9px;
+		top: 45%;
+	}
+	.option {
+		height: 6rem;
+		line-height: 6rem;
+	}
+	.option:last-child {
+		border-left: 0;
+		border-right: 0;
+	}
+	
+	/*** Header section || Block - header ***/
+	.header {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.header__right-content {
+		width: 100%;
+	}
+	.header__left-content {
+		width: 100%;
+	}
+	.header__search {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.header__form {
+		display: none;
+	}
+	/* Block - logo */
+	.logo {
+		width: 100%;
+		height: 7rem;
+		text-align: center;
+	}
+	.logo a {
+		display: block;
+
+	}
+	.logo__img {
+		margin-top: 1rem;
+		display: inline-block;
+		width: 60%;
+		vertical-align: middle;
+	}
+
 }
