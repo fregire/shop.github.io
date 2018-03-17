@@ -141,6 +141,15 @@
   font-weight: 200; 
 
 }
+/* HvCn */
+@font-face { 
+  font-family: 'HelveticaNueueLTStd'; 
+  src: url('../fonts/HelveticaNeueLTStd-BdCn.woff2') format('woff2'), 
+       url('../fonts/HelveticaNeueLTStd-BdCn.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/HelveticaNeueLTStd-BdCn.woff') format('woff'); 
+  font-stretch: condensed;
+  font-weight: 600; 
+}
 /* 5.Font Awesome */
 @font-face { 
   font-family: 'FontAwesome'; 

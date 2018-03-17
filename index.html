@@ -8,12 +8,14 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body class="page">
 	<div class="page__account">
 		<div class="account page__wrapper">
 			<div class="account__care">Custom Care: 888-23-4567</div>
 			<div class="account__settings">
+				<!-- TODO: Стилизовать select(убрать стрелку) -->
 				<select name="Language" class="option option--list">
 					<option class="option__value" value="">$ US</option>
 					<option class="option__value" value="">$ RU</option>
@@ -30,7 +32,7 @@
 		</div> <!-- End of section - account -->
 	</div>
 	<div class="page__header">
-		<header class="header page__wrapper">
+		<header class="header header--not_desktop page__wrapper">
 			<div class="header__left-content">
 				<div class="logo">
 					<a href="#"><img src="img/logo.png" alt=""></a>
@@ -57,7 +59,63 @@
 					</div>
 				</div>
 			</div> <!-- end of right-content of header -->
+			<div class="header__mobile-nav">
+				<p class="header__name-of-menu">Menu</p>
+				<i class="fa fa-bars js-menu" aria-hidden="true"></i>
+				<ul class="nav nav--mobile">
+					<li class="nav__item"><a href="#" class="link link--nav">new</a></li>
+					<li class="nav__item"><a href="#" class="link link--nav">designers</a></li>
+					<li class="nav__item"><a href="#" class="link link--nav">women</a></li>
+					<li class="nav__item"><a href="#" class="link link--nav">men</a></li>
+					<li class="nav__item"><a href="#" class="link link--nav">clearence</a></li>
+				</ul>
+			</div>
 		</header> <!-- End of section - header -->
 	</div>
+	<div class="page__slider">
+		<div class="slider">
+			<div class="slider__slide slider__slide--active">
+				<div class="slider__text">
+					<p class="slider__top-text">Crazy</p>
+					<h1 class="slider__title">Crazy Summer</h1>
+					<p class="slider__descr">Woman collection</p>
+					<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+				</div>
+				<div class="slider__picture">
+					<img src="img/main-slider/woman.png" class="slider__img" alt="Woman wearing our clothes">
+				</div>
+			</div>
+			<div class="slider__slide">
+				<div class="slider__text">
+					<p class="slider__top-text">Crazy</p>
+					<h1 class="slider__title">Crazy Autumn</h1>
+					<p class="slider__descr">Woman collection</p>
+					<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+				</div>
+				<div class="slider__picture">
+					<img src="img/main-slider/woman2.png" class="slider__img" alt="Woman wearing our clothes">
+				</div>
+			</div>
+			<div class="slider__slide">
+				<div class="slider__text">
+					<p class="slider__top-text">Crazy</p>
+					<h1 class="slider__title">Crazy Winter</h1>
+					<p class="slider__descr">Woman collection</p>
+					<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+				</div>
+				<div class="slider__picture">
+					<img src="img/main-slider/woman.png" class="slider__img" alt="Woman wearing our clothes">
+				</div>
+			</div>
+			<!-- Slider controls -->
+			<div class="slider__prev js-slide__prev">
+				<img src="img/main-slider/slide-prev.png" class="slider__arrow" alt="Arrow next">
+			</div>
+			<div class="slider__next js-slide__next">
+				<img src="img/main-slider/slide-next.png" class="slider__arrow" alt="Arrow previous">
+			</div>
+		</div> <!-- End of section slider -->
+	</div> 
+	<script src="scripts/main.js"></script>
 </body>
 </html>
