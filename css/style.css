@@ -5,6 +5,9 @@
 html {
 	font-size: 62.5%;
 }
+select::-ms-expand { /* For creating custom selects */
+    display: none;
+}
 /* Some tips to understand my code:
 	1.* ... * - means block
 	2.*** ... *** - start of the new section 
@@ -111,7 +114,10 @@ html {
 	        justify-content: space-between;
 }
 .account__option {
+	height: 3rem;
 	position: relative;
+	overflow-y: hidden;
+
 }
 .account__option:after {
 	content: '';

@@ -131,10 +131,15 @@
 	}
 	.account__my {
 		white-space: nowrap;
+		padding: 0 2rem;
+	}
+	.account__option {
+		overflow-y: visible;
+
 	}
 	.account__option:after {
 		border-width: 9px;
-		top: 45%;
+		top: 87%;
 	}
 	.option {
 		height: 6rem;
@@ -143,6 +148,9 @@
 	.option:last-child {
 		border-left: 0;
 		border-right: 0;
+	}
+	.option__item:first-child {
+		width: 20%;
 	}
 	
 	/*** Header section || Block - header ***/
