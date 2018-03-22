@@ -56,7 +56,9 @@
 		elemDots[current - 1].classList.add(elemClassDots)
 		current--;
 	};
+	// When you click one of the dots it execute this function to move to this slide
 	function moveFromDots(){
+		// Get number of the slide
 		let slideNum = this.getAttribute('data-slide');
 		clearActiveClasses(slides, 'slider__slide--active');
 		clearActiveClasses(dots, 'slider__dot--active');
