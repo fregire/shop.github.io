@@ -267,7 +267,7 @@ select::-ms-expand { /* For creating custom selects */
 	padding: 0 1.5rem;
 }
 /*** Main slider section || Block - slider ***/
-.page__slider {
+.main__slider {
 	overflow: hidden;
 }
 .slider {
