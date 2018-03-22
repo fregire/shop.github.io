@@ -31,11 +31,12 @@ select::-ms-expand { /* For creating custom selects */
 	max-width: 970px;
 	margin: 0 auto;
 }
-.wrapper {
-	max-width: 940px;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin: 0 auto;
+.hidden {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Block - link */
@@ -267,7 +268,7 @@ select::-ms-expand { /* For creating custom selects */
 	padding: 0 1.5rem;
 }
 /*** Main slider section || Block - slider ***/
-.page__slider {
+.main__slider {
 	overflow: hidden;
 }
 .slider {
@@ -276,6 +277,7 @@ select::-ms-expand { /* For creating custom selects */
 	min-height: 35rem;
 	position: relative;
 	width: 100%;
+	margin-bottom: 7.4rem;
 }
 .slider__slide {
 	-webkit-box-align: center;
@@ -294,6 +296,7 @@ select::-ms-expand { /* For creating custom selects */
 	position: absolute;
 	top: 0;
 	opacity: 0;
+	overflow: hidden;
 	-webkit-transition: opacity 400ms;
 	-o-transition: opacity 400ms;
 	transition: opacity 400ms;
@@ -417,4 +420,40 @@ select::-ms-expand { /* For creating custom selects */
 }
 .slider__next {
 	right: 0;
+}
+.slider__dots {
+	bottom: -7.4rem;
+	height: 7.4rem;
+	left: 50%;
+	line-height: 7rem;
+	position: absolute;
+	transform: translate(-50%, 0);
+}
+.slider__dot {
+	background-color: #867a76;
+	border-radius: 50%;
+	display: inline-block;
+	height: 11px;
+	margin: 0 .9rem;
+	vertical-align: middle;
+	width: 11px;
+}
+.slider__dot:hover {
+	cursor: pointer;
+}
+.slider__dot--active {
+	background-color: #fd926d;
+}
+/*** Contacts section || Block - contacts ***/
+.contacts {
+	background-color: #ededed;
+	color: #6c6c6c;
+	font-size: 1.2rem;
+	height: 5.6rem;
+}
+.contacts__inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 970px;
+	margin: 0 auto;
 }

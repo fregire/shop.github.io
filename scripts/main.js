@@ -3,7 +3,8 @@
 		current = 0,
 		nextBtn = document.querySelector('.js-slide__next'),
 		prevBtn = document.querySelector('.js-slide__prev'),
-		menu    = document.querySelector('.js-menu');
+		menu    = document.querySelector('.js-menu'),
+		dots    = document.querySelectorAll('.slider__dot');
 
 	nextBtn.addEventListener('click', function() {
 		moveNextSlide(slides, 'slider__slide--active');
@@ -30,6 +31,7 @@
 			current = -1;
 		}
 		elem[current + 1].classList.add(elemClass);
+		dots[current]
 		current++;
 		
 	}
