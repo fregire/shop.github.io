@@ -189,5 +189,8 @@
 		width: 60%;
 		vertical-align: middle;
 	}
-
+	/*** Slider section || slider block ***/
+	.main__slider {
+		display: none;
+	}
 }

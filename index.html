@@ -35,6 +35,7 @@
 			
 	</section> <!-- End of section - account -->
 	<header class="header header--not_desktop page__wrapper">
+			<h1 class="hidden">Shop Lookshop - the best sales!</h1>
 			<div class="header__left-content">
 				<div class="logo">
 					<a href="#"><img src="img/logo.svg" class="logo__img" alt=""></a>
@@ -75,8 +76,9 @@
 	</header> <!-- End of section - header -->
 	<main class="main">
 		<section class="main__slider">
+			<h2 class="hidden">Main slider</h2>
 			<div class="slider">
-				<div class="slider__slide slider__slide--active">
+				<div data-num="0" class="slider__slide slider__slide--active">
 					<div class="slider__text">
 						<p class="slider__top-text">Crazy</p>
 						<h1 class="slider__title">Crazy Summer</h1>
@@ -87,7 +89,7 @@
 						<img src="img/main-slider/woman.png" class="slider__img" alt="Woman wearing our clothes">
 					</div>
 				</div>
-				<div class="slider__slide">
+				<div data-num="1" class="slider__slide">
 					<div class="slider__text">
 						<p class="slider__top-text">Crazy</p>
 						<h1 class="slider__title">Crazy Autumn</h1>
@@ -98,7 +100,7 @@
 						<img src="img/main-slider/woman2.png" class="slider__img" alt="Woman wearing our clothes">
 					</div>
 				</div>
-				<div class="slider__slide">
+				<div data-num="2" class="slider__slide">
 					<div class="slider__text">
 						<p class="slider__top-text">Crazy</p>
 						<h1 class="slider__title">Crazy Winter</h1>
@@ -116,9 +118,33 @@
 				<div class="slider__next js-slide__next">
 					<img src="img/main-slider/slide-next.png" class="slider__arrow" alt="Arrow previous">
 				</div>
+				<div class="slider__dots">
+					<p data-slide="0" class="slider__dot slider__dot--active"></p>
+					<p data-slide="1" class="slider__dot"></p>
+					<p data-slide="2" class="slider__dot"></p>
+				</div>
 			</div> <!-- End of section slider -->
 		</section> 
-
+		<section class="contacts">
+			<h2 class="hidden">Our contacts</h2>
+			<div class="contacts__inner">
+				<div class="contacts__left-content">
+					<p class="contacts__text">Stay updated</p>
+					<form action="#" class="email-field">
+						<input type="text" class="email-field__input">
+						<input type="submit" class="email-field__btn button" value="+">
+					</form>
+				</div>
+				<div class="contacts__right-content">
+					<p class="contacts__text">Find us here</p>
+					<div class="social">
+						<i class="social__item"></i>
+						<i class="social__item"></i>
+						<i class="social__item"></i>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	
 
