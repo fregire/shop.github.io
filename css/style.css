@@ -435,6 +435,7 @@ select::-ms-expand { /* For creating custom selects */
 	display: inline-block;
 	height: 11px;
 	margin: 0 .9rem;
+	transition: background-color 200ms;
 	vertical-align: middle;
 	width: 11px;
 }
