@@ -84,16 +84,14 @@
 		font-size: 15px;
 	}
 	/*** Account section || Block - account ***/
-	.page__account {
-		height: auto;
-
-	}
 	.account {
+		font-size: 1.5rem;
+	}
+	.account__inner {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-		font-size: 1.5rem;
 	}
 	.account__settings {
 		display: -webkit-box;

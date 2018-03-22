@@ -11,8 +11,8 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body class="page">
-	<div class="page__account">
-		<div class="account page__wrapper">
+	<section class="account">
+		<div class="account__inner">
 			<div class="account__care">Custom Care: 888-23-4567</div>
 			<div class="account__settings">
 				<div class="account__option">
@@ -31,10 +31,10 @@
 					<i class="fa fa-search option__icon" aria-hidden="true"></i>
 				</div>
 			</div>
-		</div> <!-- End of section - account -->
-	</div>
-	<div class="page__header">
-		<header class="header header--not_desktop page__wrapper">
+		</div>
+			
+	</section> <!-- End of section - account -->
+	<header class="header header--not_desktop page__wrapper">
 			<div class="header__left-content">
 				<div class="logo">
 					<a href="#"><img src="img/logo.svg" class="logo__img" alt=""></a>
@@ -72,52 +72,56 @@
 					<li class="nav__item"><a href="#" class="link link--nav">clearence</a></li>
 				</ul>
 			</div>
-		</header> <!-- End of section - header -->
-	</div>
-	<div class="page__slider">
-		<div class="slider">
-			<div class="slider__slide slider__slide--active">
-				<div class="slider__text">
-					<p class="slider__top-text">Crazy</p>
-					<h1 class="slider__title">Crazy Summer</h1>
-					<p class="slider__descr">Woman collection</p>
-					<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+	</header> <!-- End of section - header -->
+	<main class="main">
+		<section class="main__slider">
+			<div class="slider">
+				<div class="slider__slide slider__slide--active">
+					<div class="slider__text">
+						<p class="slider__top-text">Crazy</p>
+						<h1 class="slider__title">Crazy Summer</h1>
+						<p class="slider__descr">Woman collection</p>
+						<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+					</div>
+					<div class="slider__picture">
+						<img src="img/main-slider/woman.png" class="slider__img" alt="Woman wearing our clothes">
+					</div>
 				</div>
-				<div class="slider__picture">
-					<img src="img/main-slider/woman.png" class="slider__img" alt="Woman wearing our clothes">
+				<div class="slider__slide">
+					<div class="slider__text">
+						<p class="slider__top-text">Crazy</p>
+						<h1 class="slider__title">Crazy Autumn</h1>
+						<p class="slider__descr">Woman collection</p>
+						<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+					</div>
+					<div class="slider__picture">
+						<img src="img/main-slider/woman2.png" class="slider__img" alt="Woman wearing our clothes">
+					</div>
 				</div>
-			</div>
-			<div class="slider__slide">
-				<div class="slider__text">
-					<p class="slider__top-text">Crazy</p>
-					<h1 class="slider__title">Crazy Autumn</h1>
-					<p class="slider__descr">Woman collection</p>
-					<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+				<div class="slider__slide">
+					<div class="slider__text">
+						<p class="slider__top-text">Crazy</p>
+						<h1 class="slider__title">Crazy Winter</h1>
+						<p class="slider__descr">Woman collection</p>
+						<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+					</div>
+					<div class="slider__picture">
+						<img src="img/main-slider/woman.png" class="slider__img" alt="Woman wearing our clothes">
+					</div>
 				</div>
-				<div class="slider__picture">
-					<img src="img/main-slider/woman2.png" class="slider__img" alt="Woman wearing our clothes">
+				<!-- Slider controls -->
+				<div class="slider__prev js-slide__prev">
+					<img src="img/main-slider/slide-prev.png" class="slider__arrow" alt="Arrow next">
 				</div>
-			</div>
-			<div class="slider__slide">
-				<div class="slider__text">
-					<p class="slider__top-text">Crazy</p>
-					<h1 class="slider__title">Crazy Winter</h1>
-					<p class="slider__descr">Woman collection</p>
-					<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+				<div class="slider__next js-slide__next">
+					<img src="img/main-slider/slide-next.png" class="slider__arrow" alt="Arrow previous">
 				</div>
-				<div class="slider__picture">
-					<img src="img/main-slider/woman.png" class="slider__img" alt="Woman wearing our clothes">
-				</div>
-			</div>
-			<!-- Slider controls -->
-			<div class="slider__prev js-slide__prev">
-				<img src="img/main-slider/slide-prev.png" class="slider__arrow" alt="Arrow next">
-			</div>
-			<div class="slider__next js-slide__next">
-				<img src="img/main-slider/slide-next.png" class="slider__arrow" alt="Arrow previous">
-			</div>
-		</div> <!-- End of section slider -->
-	</div> 
+			</div> <!-- End of section slider -->
+		</section> 
+
+	</main>
+	
+
 	<script src="scripts/main.js"></script>
 </body>
 </html>
