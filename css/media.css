@@ -1,10 +1,12 @@
 @media screen and (max-width: 760px) {
-	.page__wrapper {
+	/*** Account section || account block ***/
+	.account__inner {
 		max-width: 96%;
 	}
 	/*** Header section || Block - header ***/
-	.header--not_desktop {
+	.header__inner {
 		height: auto;
+		max-width: 96%;
 		margin-top: 2rem;
 	}
 	.header__nav {
@@ -12,8 +14,8 @@
 	}
 	.header__mobile-nav {
 		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
 		color: #fff;
 		text-transform: uppercase;
 		font-size: 1.8rem;
@@ -76,6 +78,10 @@
 	}
 	.slider__descr {
 		font-size: 3rem;
+	}
+	/*** Contacts section || contacts block ***/
+	.contacts__inner {
+		max-width: 96%;
 	}
 }
 
@@ -153,11 +159,13 @@
 	}
 	
 	/*** Header section || Block - header ***/
-	.header {
+	.header__inner {
+		max-width: 96%;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		height: auto;
 	}
 	.header__right-content {
 		width: 100%;
@@ -200,13 +208,12 @@
 	}
 	.contacts__inner {
 		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		max-width: 96%;
+		-ms-flex-direction: column;
+		flex-direction: column;
 	}
 	.contacts__item--email {
 		width: 100%;

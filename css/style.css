@@ -31,10 +31,6 @@ select::-ms-expand { /* For creating custom selects */
 	line-height: 1.2;
 	overflow-x: hidden;
 }
-.page__wrapper {
-	max-width: 970px;
-	margin: 0 auto;
-}
 .hidden {
   position: absolute !important;
   height: 1px; width: 1px; 
@@ -193,19 +189,21 @@ select::-ms-expand { /* For creating custom selects */
 	color: #fff;
 }
 /*** Header section || Block - header ***/
-.header {
+.header__inner {
+	height: 10.6rem;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	height: 10.6rem;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
+	max-width: 970px;
+	margin: 0 auto;
 }
 .header__mobile-nav {
 	display: none;
@@ -483,6 +481,10 @@ select::-ms-expand { /* For creating custom selects */
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .contacts__text {
 	padding-right: 1rem;
@@ -503,6 +505,7 @@ select::-ms-expand { /* For creating custom selects */
 /* Block - social */
 .social {
 	font-size: 2rem;
+	white-space: nowrap;
 }
 .social__item {
 	color: #6b6b6b;
