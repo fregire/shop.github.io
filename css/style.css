@@ -436,7 +436,9 @@ select::-ms-expand { /* For creating custom selects */
 	left: 50%;
 	line-height: 7rem;
 	position: absolute;
-	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	    -ms-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
 }
 .slider__dot {
 	background-color: #867a76;
@@ -444,6 +446,8 @@ select::-ms-expand { /* For creating custom selects */
 	display: inline-block;
 	height: 11px;
 	margin: 0 .9rem;
+	-webkit-transition: background-color 200ms;
+	-o-transition: background-color 200ms;
 	transition: background-color 200ms;
 	vertical-align: middle;
 	width: 11px;
@@ -462,15 +466,23 @@ select::-ms-expand { /* For creating custom selects */
 	height: 5.6rem;
 }
 .contacts__inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	max-width: 970px;
 	margin: 0 auto;
 	height: 100%;
 }
 .contacts__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .contacts__text {
 	padding-right: 1rem;
@@ -487,4 +499,17 @@ select::-ms-expand { /* For creating custom selects */
 	right: 0;
 	top: 0;
 	width: 18%;
+}
+/* Block - social */
+.social {
+	font-size: 2rem;
+}
+.social__item {
+	color: #6b6b6b;
+	display: inline-block;
+	line-height: 5.6rem;
+	padding: 0 2rem;
+}
+.social__item--another-bg {
+	background: #f7f7f7;
 }
