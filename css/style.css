@@ -74,6 +74,9 @@ select::-ms-expand { /* For creating custom selects */
 	border-right: none;
 	border-left: none;
 }
+.input--email {
+	border: none;
+}
 
 /* Block - button */
 .button {
@@ -457,4 +460,12 @@ select::-ms-expand { /* For creating custom selects */
 	justify-content: space-between;
 	max-width: 970px;
 	margin: 0 auto;
+	height: 100%;
+}
+.contacts__item {
+	display: flex;
+	align-items: center;
+}
+.contacts__text {
+	padding-right: 1rem;
 }

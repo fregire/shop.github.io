@@ -193,4 +193,8 @@
 	.main__slider {
 		display: none;
 	}
+	/*** Contacts section || contacts block ***/
+	.contacts__inner {
+		flex-direction: column;
+	}
 }
