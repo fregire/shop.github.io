@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 640px) {
 	html {
-		font-size: 15px;
+		font-size: 130%;
 	}
 	/*** Account section || Block - account ***/
 	.account {
@@ -194,7 +194,22 @@
 		display: none;
 	}
 	/*** Contacts section || contacts block ***/
+	.contacts {
+		background: none;
+		height: auto;
+	}
 	.contacts__inner {
 		flex-direction: column;
+		max-width: 96%;
+	}
+	.contacts__text--email {
+		display: none;
+	}
+	/* Block - email-field */
+	.email-field {
+		width: 100%;
+	}
+	.email-field__input {
+		background: #ededed;
 	}
 }

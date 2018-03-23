@@ -8,6 +8,10 @@ html {
 select::-ms-expand { /* For creating custom selects */
     display: none;
 }
+::-webkit-input-placeholder {color:#9f9f9f; opacity:1;}/* webkit */
+::-moz-placeholder          {color:#9f9f9f; opacity:1;}/* Firefox 19+ */
+:-moz-placeholder           {color:#9f9f9f; opacity:1;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#9f9f9f; opacity:1;}/* IE */
 /* Some tips to understand my code:
 	1.* ... * - means block
 	2.*** ... *** - start of the new section 
@@ -76,6 +80,8 @@ select::-ms-expand { /* For creating custom selects */
 }
 .input--email {
 	border: none;
+	font-style: italic;
+	padding-right: 18%;
 }
 
 /* Block - button */
@@ -468,4 +474,17 @@ select::-ms-expand { /* For creating custom selects */
 }
 .contacts__text {
 	padding-right: 1rem;
+}
+/* Block - email-field */
+.email-field {
+	position: relative;
+}
+.email-field__btn {
+	font-size: 2rem;
+	font-weight: 900;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 18%;
 }
