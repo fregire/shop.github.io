@@ -15,12 +15,12 @@
 	menu.addEventListener('click', function() {
 		document.querySelector('.nav--mobile').classList.toggle('nav--mobile_active');
 	});
-	for(let i = 0; i < dots.length; i++) {
+	for(var i = 0; i < dots.length; i++) {
 		dots[i].addEventListener('click', moveFromDots);
 	};
 	// Clear active classes for slides and dots
 	function clearActiveClasses(elem, elemClass){
-		for(let i = 0; i < elem.length; i++){
+		for(var i = 0; i < elem.length; i++){
 			elem[i].classList.remove(elemClass);
 		}
 		
@@ -59,7 +59,7 @@
 	// When you click one of the dots it execute this function to move to this slide
 	function moveFromDots(){
 		// Get number of the slide
-		let slideNum = this.getAttribute('data-slide');
+		var slideNum = this.getAttribute('data-slide');
 		clearActiveClasses(slides, 'slider__slide--active');
 		clearActiveClasses(dots, 'slider__dot--active');
 		slides[slideNum].classList.add('slider__slide--active');

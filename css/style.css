@@ -30,6 +30,8 @@ select::-ms-expand { /* For creating custom selects */
 	font-size: 1.4rem;
 	line-height: 1.2;
 	overflow-x: hidden;
+
+	height: 10000px;
 }
 .hidden {
   position: absolute !important;
@@ -142,6 +144,7 @@ select::-ms-expand { /* For creating custom selects */
 	top: 40%;
 	right: 1.3rem;
 }
+
 /* Block - option */
 .option {
 	border-left: 1px solid #444;
@@ -515,4 +518,41 @@ select::-ms-expand { /* For creating custom selects */
 }
 .social__item--another-bg {
 	background: #f7f7f7;
+}
+/*** Media section || Block - media ***/
+.media {
+	height: 33.8rem;
+}
+.media__inner {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	max-width: 970px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.media__left-content {
+	margin-right: 2px;
+	background-color: gray;
+}
+.media__left-content,
+.media__right-content {
+	
+	display: inline-block;
+	width: 50%;
+}
+/* Block - secondary */
+.secondary-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.secondary-content__top {
+	margin-bottom: 2px;
+}
+.secondary-content__top,
+.secondary-content__bottom {
+	background: pink;
+	height: 49.8%;
 }
