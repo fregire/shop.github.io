@@ -68,6 +68,7 @@ select::-ms-expand { /* For creating custom selects */
 	border: 1px solid #d6d6d6;
 	font-size: 1.2rem;
 	outline: none;
+	padding: 10px 9px;
 	padding: 1rem .9rem;
 	width: 100%;
 }
@@ -97,9 +98,11 @@ select::-ms-expand { /* For creating custom selects */
 	cursor: pointer;
 }
 .button--slider {
+	padding: 20px 23px;
 	padding: 2rem 2.3rem;
 }
 .button--slider .fa {
+	padding-left: 17px;
 	padding-left: 1.7rem;
 }
 
@@ -149,7 +152,9 @@ select::-ms-expand { /* For creating custom selects */
 .option {
 	border-left: 1px solid #444;
 	border-right: 1px solid #444;
+	height: 30px;
 	height: 3rem;
+	padding: 0 13px;
 	padding: 0 1.3rem;
 }
 .option:hover {
@@ -160,6 +165,7 @@ select::-ms-expand { /* For creating custom selects */
 	vertical-align: middle;
 }
 .option__item:first-child {
+	padding-right: 10px;
 	padding-right: 1rem;
 }
 .option--list {
@@ -172,6 +178,7 @@ select::-ms-expand { /* For creating custom selects */
 	border-left: 1px solid #444;
 	outline: none;
 	position: relative;
+	padding-right: 30px;
 	padding-right: 3rem;
 }
 .option__icon {
@@ -212,7 +219,7 @@ select::-ms-expand { /* For creating custom selects */
 	display: none;
 }
 .header__left-content {
-	width: 16%;
+	width: 12.1%;
 }
 .header__right-content {
 	-webkit-box-align: center;
@@ -240,16 +247,23 @@ select::-ms-expand { /* For creating custom selects */
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	padding: 6px;
 	padding: .6rem;
 }
 .header__nav {
+	margin-right: 23px;
 	margin-right: 2.3rem;
 }
 .header__icon-cart {
+	height: 20px;
+	width: 20px;
 	height: 2rem;
 	width: 2rem;
 }
-
+/* Block - logo */
+.logo__img {
+	width: 100%;
+}
 /* Block - sell */
 .sell {
 	color: #949393;
@@ -261,10 +275,12 @@ select::-ms-expand { /* For creating custom selects */
 }
 .sell__items {
 	border-right: 1px solid #c1c0c0;
+	padding-right: 7px;
 	padding-right: .7rem;
 }
 .sell__price {
 	border-left: 1px solid #cecece;
+	padding-left: 7px;
 	padding-left: .7rem; 
 }
 /* Block - nav*/
@@ -275,7 +291,8 @@ select::-ms-expand { /* For creating custom selects */
 }
 .nav__item {
 	display: inline-block;
-	padding: 0 1.5rem;
+	padding: 0 18px;
+	padding: 0 1.8rem;
 }
 /*** Main slider section || Block - slider ***/
 .main__slider {
@@ -283,10 +300,12 @@ select::-ms-expand { /* For creating custom selects */
 }
 .slider {
 	background: #ede6dc;
-	height: calc(100vh - 13.6rem);
+	height: calc(100vh - 21.1rem);
+	min-height: 350px;
 	min-height: 35rem;
 	position: relative;
 	width: 100%;
+	margin-bottom: 74px;
 	margin-bottom: 7.4rem;
 }
 .slider__slide {
@@ -330,6 +349,7 @@ select::-ms-expand { /* For creating custom selects */
 	font-size: 3.6rem;
 	margin: 0;
 	line-height: 1;
+	padding: 0 8px;
 	padding: 0 .8rem;
 	position: relative;
 }
@@ -342,6 +362,7 @@ select::-ms-expand { /* For creating custom selects */
 	height: 1px;
 	position: absolute;
 	top: 60%;
+	width: 74px;
 	width: 7.4rem;
 }
 .slider__top-text:after {
@@ -391,6 +412,7 @@ select::-ms-expand { /* For creating custom selects */
 }
 .slider__img {
 	height: calc(100vh - 13.6rem);
+	min-height: 400px;
 	min-height: 40rem;
 }
 .slider__next,
@@ -402,6 +424,7 @@ select::-ms-expand { /* For creating custom selects */
 	    -ms-transform: translate(0, -50%);
 	        transform: translate(0, -50%);
 	top: 50%;
+	width: 30px;
 	width: 3rem;
 }
 .slider__next:hover .slider__arrow,
@@ -433,8 +456,10 @@ select::-ms-expand { /* For creating custom selects */
 }
 .slider__dots {
 	bottom: -7.4rem;
+	height: 74px;
 	height: 7.4rem;
 	left: 50%;
+	line-height: 70px;
 	line-height: 7rem;
 	position: absolute;
 	-webkit-transform: translate(-50%, 0);
@@ -446,6 +471,7 @@ select::-ms-expand { /* For creating custom selects */
 	border-radius: 50%;
 	display: inline-block;
 	height: 11px;
+	margin: 0 9px;
 	margin: 0 .9rem;
 	-webkit-transition: background-color 200ms;
 	-o-transition: background-color 200ms;
@@ -464,6 +490,7 @@ select::-ms-expand { /* For creating custom selects */
 	background-color: #ededed;
 	color: #6c6c6c;
 	font-size: 1.2rem;
+	height: 56px;
 	height: 5.6rem;
 }
 .contacts__inner {
@@ -513,6 +540,7 @@ select::-ms-expand { /* For creating custom selects */
 .social__item {
 	color: #6b6b6b;
 	display: inline-block;
+	line-height: 56px;
 	line-height: 5.6rem;
 	padding: 0 2rem;
 }
@@ -521,6 +549,7 @@ select::-ms-expand { /* For creating custom selects */
 }
 /*** Media section || Block - media ***/
 .media {
+	height: 338px;
 	height: 33.8rem;
 }
 .media__inner {
