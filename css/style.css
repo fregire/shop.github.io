@@ -8,6 +8,10 @@ html {
 select::-ms-expand { /* For creating custom selects */
     display: none;
 }
+::-webkit-input-placeholder {color:#9f9f9f; opacity:1;}/* webkit */
+::-moz-placeholder          {color:#9f9f9f; opacity:1;}/* Firefox 19+ */
+:-moz-placeholder           {color:#9f9f9f; opacity:1;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#9f9f9f; opacity:1;}/* IE */
 /* Some tips to understand my code:
 	1.* ... * - means block
 	2.*** ... *** - start of the new section 
@@ -26,10 +30,15 @@ select::-ms-expand { /* For creating custom selects */
 	font-size: 1.4rem;
 	line-height: 1.2;
 	overflow-x: hidden;
+
+	height: 10000px;
 }
-.page__wrapper {
-	max-width: 970px;
-	margin: 0 auto;
+.hidden {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Block - link */
@@ -67,6 +76,11 @@ select::-ms-expand { /* For creating custom selects */
 	border-right: none;
 	border-left: none;
 }
+.input--email {
+	border: none;
+	font-style: italic;
+	padding-right: 18%;
+}
 
 /* Block - button */
 .button {
@@ -90,20 +104,22 @@ select::-ms-expand { /* For creating custom selects */
 }
 
 /*** Account section || Block - account ***/
-.page__account {
-	background: #000;
-	height: 3rem;
-}
 .account {
+	background: #000;
+	font-size: 1.1rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-transform: uppercase;
+}
+.account__inner {
+	max-width: 970px;
+	margin: 0 auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 1.1rem;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	line-height: 3rem;
-	text-transform: uppercase;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 .account__settings {
 	display: -webkit-box;
@@ -128,6 +144,7 @@ select::-ms-expand { /* For creating custom selects */
 	top: 40%;
 	right: 1.3rem;
 }
+
 /* Block - option */
 .option {
 	border-left: 1px solid #444;
@@ -175,25 +192,27 @@ select::-ms-expand { /* For creating custom selects */
 	color: #fff;
 }
 /*** Header section || Block - header ***/
-.header {
+.header__inner {
+	height: 10.6rem;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	height: 10.6rem;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
+	max-width: 970px;
+	margin: 0 auto;
 }
 .header__mobile-nav {
 	display: none;
 }
 .header__left-content {
-	width: 16%;
+	width: 12.1%;
 }
 .header__right-content {
 	-webkit-box-align: center;
@@ -230,7 +249,10 @@ select::-ms-expand { /* For creating custom selects */
 	height: 2rem;
 	width: 2rem;
 }
-
+/* Block - logo */
+.logo__img {
+	width: 100%;
+}
 /* Block - sell */
 .sell {
 	color: #949393;
@@ -259,15 +281,16 @@ select::-ms-expand { /* For creating custom selects */
 	padding: 0 1.5rem;
 }
 /*** Main slider section || Block - slider ***/
-.page__slider {
+.main__slider {
 	overflow: hidden;
 }
 .slider {
 	background: #ede6dc;
-	height: calc(100vh - 13.6rem);
+	height: calc(100vh - 21rem);
 	min-height: 35rem;
 	position: relative;
 	width: 100%;
+	margin-bottom: 7.4rem;
 }
 .slider__slide {
 	-webkit-box-align: center;
@@ -286,6 +309,7 @@ select::-ms-expand { /* For creating custom selects */
 	position: absolute;
 	top: 0;
 	opacity: 0;
+	overflow: hidden;
 	-webkit-transition: opacity 400ms;
 	-o-transition: opacity 400ms;
 	transition: opacity 400ms;
@@ -409,4 +433,149 @@ select::-ms-expand { /* For creating custom selects */
 }
 .slider__next {
 	right: 0;
+}
+.slider__dots {
+	bottom: -7.4rem;
+	height: 7.4rem;
+	left: 50%;
+	line-height: 7rem;
+	position: absolute;
+	-webkit-transform: translate(-50%, 0);
+	    -ms-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
+}
+.slider__dot {
+	background-color: #867a76;
+	border-radius: 50%;
+	display: inline-block;
+	height: 11px;
+	margin: 0 .9rem;
+	-webkit-transition: background-color 200ms;
+	-o-transition: background-color 200ms;
+	transition: background-color 200ms;
+	vertical-align: middle;
+	width: 11px;
+}
+.slider__dot:hover {
+	cursor: pointer;
+}
+.slider__dot--active {
+	background-color: #fd926d;
+}
+/*** Contacts section || Block - contacts ***/
+.contacts {
+	background-color: #ededed;
+	color: #6c6c6c;
+	font-size: 1.2rem;
+	height: 5.6rem;
+}
+.contacts__inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	max-width: 970px;
+	margin: 0 auto;
+	height: 100%;
+}
+.contacts__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+.contacts__text {
+	-ms-flex-negative: 1;
+	    flex-shrink: 1;
+	padding-right: 1rem;
+}
+/* Block - email-field */
+.email-field {
+	position: relative;
+	width: 156px;
+	width: 15.6rem;
+}
+.email-field__btn {
+	font-size: 2rem;
+	font-weight: 900;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 18%;
+}
+/* Block - social */
+.social {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 2rem;
+	-ms-flex-negative: 1;
+	    flex-shrink: 1;
+	white-space: nowrap;
+}
+.social__item {
+	color: #6b6b6b;
+	display: inline-block;
+	line-height: 5.6rem;
+	padding: 0 2rem;
+}
+.social__item--another-bg {
+	background: #f7f7f7;
+}
+/*** Media section || Block - media ***/
+.media {
+	height: 33.8rem;
+}
+.media__inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	max-width: 970px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.media__left-content {
+	margin-right: 2px;
+	background-color: gray;
+}
+.media__left-content,
+.media__right-content {
+	
+	display: inline-block;
+	width: 50%;
+}
+/* Block - secondary */
+.secondary-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	overflow: hidden;
+}
+.secondary-content__top {
+	margin-bottom: 2px;
+}
+.secondary-content__top,
+.secondary-content__bottom {
+	background: pink;
+	height: 49.8%;
 }
