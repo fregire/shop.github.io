@@ -300,8 +300,8 @@ select::-ms-expand { /* For creating custom selects */
 }
 .slider {
 	background: #ede6dc;
-	height: calc(100vh - 21.1rem);
 	min-height: 350px;
+	height: calc(100vh - 21rem);
 	min-height: 35rem;
 	position: relative;
 	width: 100%;
@@ -517,11 +517,15 @@ select::-ms-expand { /* For creating custom selects */
 	    justify-content: space-around;
 }
 .contacts__text {
+	-ms-flex-negative: 1;
+	    flex-shrink: 1;
 	padding-right: 1rem;
 }
 /* Block - email-field */
 .email-field {
 	position: relative;
+	width: 156px;
+	width: 15.6rem;
 }
 .email-field__btn {
 	font-size: 2rem;
@@ -534,7 +538,12 @@ select::-ms-expand { /* For creating custom selects */
 }
 /* Block - social */
 .social {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	font-size: 2rem;
+	-ms-flex-negative: 1;
+	    flex-shrink: 1;
 	white-space: nowrap;
 }
 .social__item {
@@ -553,9 +562,13 @@ select::-ms-expand { /* For creating custom selects */
 	height: 33.8rem;
 }
 .media__inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100%;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	max-width: 970px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -572,9 +585,16 @@ select::-ms-expand { /* For creating custom selects */
 }
 /* Block - secondary */
 .secondary-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	overflow: hidden;
 }
 .secondary-content__top {
