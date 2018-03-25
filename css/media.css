@@ -44,6 +44,7 @@
 	}
 	/* Block - nav */
 	.nav--mobile {
+		display: block;
 		height: 0;
 		overflow: hidden;
 		width: 100%;
@@ -149,6 +150,7 @@
 	.option {
 		height: 6rem;
 		line-height: 6rem;
+
 	}
 	.option:last-child {
 		border-left: 0;
