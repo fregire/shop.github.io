@@ -142,6 +142,7 @@ select::-ms-expand { /* For creating custom selects */
 	top: 40%;
 	right: 1.3rem;
 }
+
 /* Block - option */
 .option {
 	border-left: 1px solid #444;
