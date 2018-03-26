@@ -115,7 +115,9 @@ select::-ms-expand { /* For creating custom selects */
 	text-transform: uppercase;
 }
 .account__inner {
-	max-width: 970px;
+	max-width: 1000px;
+	padding-right: 15px;
+	padding-left: 15px;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -212,7 +214,9 @@ select::-ms-expand { /* For creating custom selects */
 	justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	max-width: 970px;
+	max-width: 1000px;
+	padding-right: 15px;
+	padding-left: 15px;
 	margin: 0 auto;
 }
 .header__mobile-nav {
@@ -314,7 +318,9 @@ select::-ms-expand { /* For creating custom selects */
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	max-width: 970px;
+	max-width: 1000px;
+	padding-right: 15px;
+	padding-left: 15px;
 	margin: 0 auto;
 	left: 50%;
 	position: absolute;
@@ -495,7 +501,9 @@ select::-ms-expand { /* For creating custom selects */
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	max-width: 970px;
+	max-width: 1000px;
+	padding-right: 15px;
+	padding-left: 15px;
 	margin: 0 auto;
 	height: 100%;
 }
@@ -564,7 +572,9 @@ select::-ms-expand { /* For creating custom selects */
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	max-width: 970px;
+	max-width: 1000px;
+	padding-right: 15px;
+	padding-left: 15px;
 	margin: 0 auto;
 	overflow: hidden;
 }

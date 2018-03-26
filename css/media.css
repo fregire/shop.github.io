@@ -2,12 +2,14 @@
 	/*** Account section || account block ***/
 	.account__inner {
 		max-width: 96%;
+		padding: 0;
 	}
 	/*** Header section || Block - header ***/
 	.header__inner {
 		height: auto;
 		max-width: 96%;
 		margin-top: 2rem;
+		padding: 0;
 	}
 	.header__nav {
 		display: none;
@@ -90,7 +92,9 @@
 	/*** Contacts section || contacts block ***/
 	.contacts__inner {
 		max-width: 96%;
+		padding: 0;
 	}
+
 }
 
 @media screen and (max-width: 640px) {
