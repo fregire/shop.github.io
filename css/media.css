@@ -1,4 +1,4 @@
-@media screen and (max-width: 772px) {
+@media screen and (max-width: 760px) {
 	/*** Account section || account block ***/
 	.account__inner {
 		max-width: 96%;
@@ -21,7 +21,7 @@
 		font-size: 1.8rem;
 		background: #fd926d;
 		padding: 0 1.7rem;
-		height: 4.6rem;
+		height: 5.2rem;
 		margin-top: 2rem;
 		margin-bottom: 1.7rem;
 		display: -webkit-box;
@@ -32,6 +32,14 @@
 		justify-content: space-between;
 		width: 100%;
 		position: relative;
+		flex-wrap: wrap;
+	}
+	.header__mobile-nav--nojs {
+		height: auto;
+	}
+	.header__mobile-nav--nojs .nav--mobile {
+		height: auto;
+		position: static;
 	}
 	.header__mobile-nav .fa {
 		font-size: 2.5rem;	
@@ -44,7 +52,6 @@
 	}
 	/* Block - nav */
 	.nav--mobile {
-		display: block;
 		height: 0;
 		overflow: hidden;
 		width: 100%;
@@ -68,9 +75,6 @@
 
 	}
 	/*** Slider section ***/
-	.slider {
-		height: 100%;
-	}
 	.slider__slide {
 		padding: 0 3rem;
 	}

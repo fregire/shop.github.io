@@ -287,12 +287,7 @@ select::-ms-expand { /* For creating custom selects */
 }
 .nav__item {
 	display: inline-block;
-<<<<<<< HEAD
 	padding-right: 3.8rem;
-=======
-	padding: 0 18px;
-	padding: 0 1.8rem;
->>>>>>> 152ba6e94bea61f11f741855a37cd452bcbe170c
 }
 /*** Main slider section || Block - slider ***/
 .main__slider {

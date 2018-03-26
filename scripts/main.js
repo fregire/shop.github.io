@@ -3,7 +3,6 @@
 		current = 0,
 		nextBtn = document.querySelector('.js-slide__next'),
 		prevBtn = document.querySelector('.js-slide__prev'),
-		menu    = document.querySelector('.js-menu'),
 		dots    = document.querySelectorAll('.slider__dot');
 
 	nextBtn.addEventListener('click', function() {
