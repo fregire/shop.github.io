@@ -1,4 +1,4 @@
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 772px) {
 	/*** Account section || account block ***/
 	.account__inner {
 		max-width: 96%;
@@ -44,6 +44,7 @@
 	}
 	/* Block - nav */
 	.nav--mobile {
+		display: block;
 		height: 0;
 		overflow: hidden;
 		width: 100%;
@@ -67,6 +68,9 @@
 
 	}
 	/*** Slider section ***/
+	.slider {
+		height: 100%;
+	}
 	.slider__slide {
 		padding: 0 3rem;
 	}
