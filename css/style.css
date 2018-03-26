@@ -51,13 +51,13 @@ select::-ms-expand { /* For creating custom selects */
 	position: relative;
 }
 .link--nav:after {
-	border: 5px solid transparent;
-	border-top: 5px solid #000;
+	border: 4px solid transparent;
+	border-top: 4px solid #000;
 	content: '';
 	display: block;
 	height: 0;
 	position: absolute;
-	right: -15px;
+	right: -12px;
 	top: 45%;
 	width: 0;
 }
@@ -242,9 +242,6 @@ select::-ms-expand { /* For creating custom selects */
 	        justify-content: space-between;
 	padding: .6rem;
 }
-.header__nav {
-	margin-right: 2.3rem;
-}
 .header__icon-cart {
 	height: 2rem;
 	width: 2rem;
@@ -278,7 +275,7 @@ select::-ms-expand { /* For creating custom selects */
 }
 .nav__item {
 	display: inline-block;
-	padding: 0 1.5rem;
+	padding-right: 3.8rem;
 }
 /*** Main slider section || Block - slider ***/
 .main__slider {
