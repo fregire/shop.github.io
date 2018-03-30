@@ -149,11 +149,16 @@ select::-ms-expand { /* For creating custom selects */
 	top: 40%;
 	right: 1.3rem;
 }
+.account__link {
+	color: #fff;
+	text-decoration: none;
+}
 
 /* Block - option */
 .option {
 	border-left: 1px solid #444;
 	border-right: 1px solid #444;
+	color: #fff;
 	height: 30px;
 	height: 3rem;
 	padding: 0 13px;
