@@ -24,7 +24,7 @@
 					</select>
 				</div>
 				<a href="#" class="account__my option">
-					<img src="img/icon-user.png" class="option__item option__item--img" alt="">
+					<img src="img/icon-user.png" class="option__item option__item--img" alt="Logo for account" width="25" height="15">
 					<span class="option__item">My account</span>
 				</a>
 				<a class="account__find option">
@@ -39,7 +39,7 @@
 			<h1 class="visually-hidden">Shop Lookshop - the best sales!</h1>
 			<div class="header__left-content">
 				<div class="logo">
-					<a href="#" aria-label="Main page"><img src="img/logo.svg" class="logo__img" alt=""></a>
+					<a href="#" aria-label="Main page"><img class="logo__img" width="122" height="30" src="img/logo.svg" alt="Logo of the website"></a>
 				</div>
 			</div> <!-- end of left-content of header -->
 			<div class="header__right-content">
@@ -58,7 +58,7 @@
 						<input class="input input--header" id="input-cart" type="text" placeholder="Your cart">
 					</form>
 					<div class="header__cart">
-						<img src="img/icon-cart.svg" alt="" class="header__icon-cart">
+						<img class="header__icon-cart" src="img/icon-cart.svg" width="22" height="20" alt="Icon of the cart" >
 						<div class="sell">
 							<div class="sell__items"><span>0</span> items</div>
 							<div class="sell__price">$ <span>0</span></div>
@@ -68,8 +68,10 @@
 			</div> <!-- end of right-content of header -->
 			<div class="header__mobile-nav header__mobile-nav--nojs">
 				<p class="header__name-of-menu">Menu</p>
-				<!--TODO: make button from i -->
-				<i class="fa fa-bars js-menu" aria-hidden="true"></i>
+				<button class="header__burger">
+					<span class="visually-hidden">Open menu</span>
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
 				<nav class="page-nav page-nav--mobile">
 					<ul class="page-nav__list">
 						<li class="page-nav__item"><a href="#" class="link link--nav">new</a></li>
@@ -93,18 +95,18 @@
 				<div data-num="0" class="slider__slide slider__slide--active">
 					<div class="slider__text">
 						<p class="slider__top-text">Crazy</p>
-						<h1 class="slider__title">Crazy Summer</h1>
+						<h3 class="slider__title">Crazy Summer</h3>
 						<p class="slider__descr">Woman collection</p>
 						<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
 					</div>
 					<div class="slider__picture">
-						<img src="img/main-slider/woman.png" class="slider__img" alt="Woman wearing our clothes">
+						<img class="slider__img" width="490" height="441"  src="img/main-slider/woman.png" alt="Woman wearing our clothes">
 					</div>
 				</div>
 				<div data-num="1" class="slider__slide">
 					<div class="slider__text">
 						<p class="slider__top-text">Crazy</p>
-						<h1 class="slider__title">Crazy Autumn</h1>
+						<h3 class="slider__title">Crazy Autumn</h3>
 						<p class="slider__descr">Woman collection</p>
 						<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
 					</div>
@@ -115,7 +117,7 @@
 				<div data-num="2" class="slider__slide">
 					<div class="slider__text">
 						<p class="slider__top-text">Crazy</p>
-						<h1 class="slider__title">Crazy Winter</h1>
+						<h3 class="slider__title">Crazy Winter</h3>
 						<p class="slider__descr">Woman collection</p>
 						<button class="button button--slider">Shop now<i class="fa fa-caret-right" aria-hidden="true"></i></button>
 					</div>
@@ -124,12 +126,14 @@
 					</div>
 				</div>
 				<!-- Slider controls -->
-				<div class="slider__prev js-slide__prev">
+				<button class="slider__prev js-slide__prev">
+					<span class="visually-hidden">To previouse slide</span>
 					<img src="img/main-slider/slide-prev.png" class="slider__arrow" alt="Arrow next">
-				</div>
-				<div class="slider__next js-slide__next">
+				</button>
+				<button class="slider__next js-slide__next">
+					<span class="visually-hidden">To next slide</span>
 					<img src="img/main-slider/slide-next.png" class="slider__arrow" alt="Arrow previous">
-				</div>
+				</button>
 				<div class="slider__dots">
 					<p data-slide="0" class="slider__dot slider__dot--active"></p>
 					<p data-slide="1" class="slider__dot"></p>

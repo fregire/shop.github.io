@@ -88,7 +88,7 @@ select::-ms-expand { /* For creating custom selects */
 	border: none;
 	border: 1px solid #d6d6d6;
 
-	outline: none;
+	/*outline: none;*/
 
 }
 .input--header {
@@ -217,7 +217,7 @@ select::-ms-expand { /* For creating custom selects */
 	background: #000;
 	border: none;
 	border-left: 1px solid #444;
-	outline: none;
+	/*outline: none;*/
 }
 .option__icon {
 	font-size: 1.8rem;
@@ -298,9 +298,16 @@ select::-ms-expand { /* For creating custom selects */
 	height: 2rem;
 	width: 2rem;
 }
+.header__burger {
+	color: white;
+
+	background: transparent;
+	border: none;
+}
 /* Block - logo */
 .logo__img {
 	width: 100%;
+	height: auto;
 }
 /* Block - sell */
 .sell {
@@ -484,6 +491,7 @@ select::-ms-expand { /* For creating custom selects */
 	width: 3rem;
 
 	background: #fdfdfb;
+	border: none;
 }
 .slider__next:hover .slider__arrow,
 .slider__prev:hover .slider__arrow {
