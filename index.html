@@ -16,7 +16,8 @@
 			<div class="account__care">Custom Care: <a class="account__link" href="tel:888-23-4567">888-23-4567</a></div>
 			<div class="account__settings">
 				<div class="account__option">
-					<select name="Language" class="option option--list">
+					<label class="visually-hidden" for="custom-option">Choose your language</label>
+					<select class="option option--list" id="custom-option" name="Language">
 						<option class="option__value" value="">$ US</option>
 						<option class="option__value" value="">$ RU</option>
 						<option class="option__value" value="">$ UA</option>
@@ -28,29 +29,33 @@
 				</a>
 				<a class="account__find option">
 					<i class="fa fa-search option__icon" aria-hidden="true"></i>
+					<span class="visually-hidden">Find some info</span>
 				</a>
 			</div>
 		</div>
 	</section> <!-- End of section - account -->
 	<header class="header">
 		<div class="header__inner">
-			<h1 class="hidden">Shop Lookshop - the best sales!</h1>
+			<h1 class="visually-hidden">Shop Lookshop - the best sales!</h1>
 			<div class="header__left-content">
 				<div class="logo">
-					<a href="#"><img src="img/logo.svg" class="logo__img" alt=""></a>
+					<a href="#" aria-label="Main page"><img src="img/logo.svg" class="logo__img" alt=""></a>
 				</div>
 			</div> <!-- end of left-content of header -->
 			<div class="header__right-content">
-				<ul class="nav header__nav">
-					<li class="nav__item"><a href="#" class="link link--nav">new</a></li>
-					<li class="nav__item"><a href="#" class="link link--nav">designers</a></li>
-					<li class="nav__item"><a href="#" class="link link--nav">women</a></li>
-					<li class="nav__item"><a href="#" class="link link--nav">men</a></li>
-					<li class="nav__item"><a href="#" class="link link--nav">clearence</a></li>
-				</ul>
+				<nav class="page-nav">
+					<ul class="page-nav__list header__nav">
+						<li class="page-nav__item"><a href="#" class="link link--nav">new</a></li>
+						<li class="page-nav__item"><a href="#" class="link link--nav">designers</a></li>
+						<li class="page-nav__item"><a href="#" class="link link--nav">women</a></li>
+						<li class="page-nav__item"><a href="#" class="link link--nav">men</a></li>
+						<li class="page-nav__item"><a href="#" class="link link--nav">clearence</a></li>
+					</ul>
+				</nav>
 				<div class="header__search">
 					<form action="#" class="header__form">
-						<input type="text" class="input input--header" placeholder="Your cart">
+						<label class="visually-hidden" for="input-cart">Find some products</label>
+						<input class="input input--header" id="input-cart" type="text" placeholder="Your cart">
 					</form>
 					<div class="header__cart">
 						<img src="img/icon-cart.svg" alt="" class="header__icon-cart">
@@ -63,14 +68,18 @@
 			</div> <!-- end of right-content of header -->
 			<div class="header__mobile-nav header__mobile-nav--nojs">
 				<p class="header__name-of-menu">Menu</p>
+				<!--TODO: make button from i -->
 				<i class="fa fa-bars js-menu" aria-hidden="true"></i>
-				<ul class="nav nav--mobile">
-					<li class="nav__item"><a href="#" class="link link--nav">new</a></li>
-					<li class="nav__item"><a href="#" class="link link--nav">designers</a></li>
-					<li class="nav__item"><a href="#" class="link link--nav">women</a></li>
-					<li class="nav__item"><a href="#" class="link link--nav">men</a></li>
-					<li class="nav__item"><a href="#" class="link link--nav">clearence</a></li>
-				</ul>
+				<nav class="page-nav page-nav--mobile">
+					<ul class="page-nav__list">
+						<li class="page-nav__item"><a href="#" class="link link--nav">new</a></li>
+						<li class="page-nav__item"><a href="#" class="link link--nav">designers</a></li>
+						<li class="page-nav__item"><a href="#" class="link link--nav">women</a></li>
+						<li class="page-nav__item"><a href="#" class="link link--nav">men</a></li>
+						<li class="page-nav__item"><a href="#" class="link link--nav">clearence</a></li>
+					</ul>
+				</nav>
+				
 			</div>
 		</div>
 	</header>
@@ -79,7 +88,7 @@
 	 <!-- End of section - header -->
 	<main class="main">
 		<section class="main__slider">
-			<h2 class="hidden">Main slider</h2>
+			<h2 class="visually-hidden">Main slider</h2>
 			<div class="slider">
 				<div data-num="0" class="slider__slide slider__slide--active">
 					<div class="slider__text">
@@ -129,21 +138,32 @@
 			</div> <!-- End of section slider -->
 		</section> 
 		<section class="contacts">
-			<h2 class="hidden">Our contacts</h2>
+			<h2 class="visually-hidden">Our contacts</h2>
 			<div class="contacts__inner">
 				<div class="contacts__item contacts__item--email">
 					<p class="contacts__text contacts__text--email">Stay updated</p>
 					<form action="#" class="email-field">
-						<input type="text" class="email-field__input input input--email" placeholder="Your email address">
-						<input type="submit" class="email-field__btn button" value="+">
+						<label class="visually-hidden" for="email-field-media">Write your email here</label>
+						<input class="email-field__input input input--email" id="email-field-media" type="text"  placeholder="Your email address">
+						<label class="visually-hidden" for="email-field-media-btn">Accept to send us your email</label>
+						<input class="email-field__btn button" type="submit" id="email-field-media-btn"  value="+">
 					</form>
 				</div>
 				<div class="contacts__item contacts__item--social">
 					<p class="contacts__text">Find us here</p>
 					<div class="social">
-						<a href="#"><i class="social__item social__item--another-bg fa fa-facebook"></i></a>
-						<a href="#"><i class="social__item fa fa-twitter"></i></a>
-						<a href="#"><i class="social__item social__item--another-bg fa fa-pinterest"></i></a>
+						<a href="#">
+								<span class="visually-hidden">Facebook</span>
+								<i class="social__item social__item--another-bg fa fa-facebook"></i>
+						</a>
+						<a href="#">
+								<span class="visually-hidden">Twitter</span>
+								<i class="social__item fa fa-twitter"></i>
+						</a>
+						<a href="#">
+								<span class="visually-hidden">Pinterest</span>
+								<i class="social__item social__item--another-bg fa fa-pinterest"></i>
+						</a>
 					</div>
 				</div>
 			</div>

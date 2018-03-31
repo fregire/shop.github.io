@@ -39,7 +39,7 @@
 	.header__mobile-nav--nojs {
 		height: auto;
 	}
-	.header__mobile-nav--nojs .nav--mobile {
+	.header__mobile-nav--nojs .page-nav--mobile {
 		height: auto;
 		position: static;
 	}
@@ -53,11 +53,11 @@
 		width: 21.3rem;
 	}
 	/* Block - nav */
-	.nav--mobile {
+	.page-nav--mobile {
 		height: 0;
 		overflow: hidden;
 		width: 100%;
-		top: 50%;
+		top: 100%;
 		left: 0;
 		position: absolute;
 		z-index: 99;
@@ -67,13 +67,13 @@
 		-o-transition: all 400ms;
 		transition: all 400ms;
 	}
-	.nav__item {
+	.page-nav__item {
 		display: block;
 		padding: 1.5rem;
 
 	}
-	.nav--mobile_active {
-		height: 25rem;
+	.page-nav--mobile_active {
+		height: 28rem;
 
 	}
 	/*** Slider section ***/

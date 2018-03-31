@@ -33,7 +33,7 @@ select::-ms-expand { /* For creating custom selects */
 
 	height: 10000px;
 }
-.hidden {
+.visually-hidden {
   position: absolute !important;
   height: 1px; width: 1px; 
   overflow: hidden;
@@ -289,12 +289,12 @@ select::-ms-expand { /* For creating custom selects */
 	padding-left: .7rem; 
 }
 /* Block - nav*/
-.nav {
+.page-nav__list {
 	font-size: 1.6rem;
 	list-style: none;
 	padding: 0;
 }
-.nav__item {
+.page-nav__item {
 	display: inline-block;
 	padding-right: 3.8rem;
 }

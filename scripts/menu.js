@@ -6,7 +6,7 @@
 	headMenu.classList.remove('header__mobile-nav--nojs'); 
 
 	menu.addEventListener('click', function() {
-		document.querySelector('.nav--mobile').classList.toggle('nav--mobile_active');
+		document.querySelector('.page-nav--mobile').classList.toggle('page-nav--mobile_active');
 	});
 
 }());
