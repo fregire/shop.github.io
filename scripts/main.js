@@ -11,9 +11,6 @@
 	prevBtn.addEventListener('click', function() {
 		movePrevSlide(slides, 'slider__slide--active', dots, 'slider__dot--active');
 	});
-	menu.addEventListener('click', function() {
-		document.querySelector('.nav--mobile').classList.toggle('nav--mobile_active');
-	});
 	for(var i = 0; i < dots.length; i++) {
 		dots[i].addEventListener('click', moveFromDots);
 	};
