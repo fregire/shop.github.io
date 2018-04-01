@@ -40,7 +40,13 @@
 			<h1 class="visually-hidden">Shop Lookshop - the best sales!</h1>
 			<div class="header__left-content">
 				<div class="logo">
-					<a href="#" aria-label="Main page"><img class="logo__img" width="122" height="30" src="img/logo.svg" alt="Logo of the website"></a>
+					<a href="#" aria-label="Main page">
+						<img class="logo__img" width="120" height="28" 
+						src="img/logo.png" 
+						srcset="img/logo.png 1x,
+								img/logo2x.png 2x"
+						alt="Logo of the website">
+					</a>
 				</div>
 			</div> <!-- end of left-content of header -->
 			<div class="header__right-content">
@@ -191,6 +197,9 @@
 			</div>
 		</section>
 	</main>	
+	<svg width="200" height="200">
+		<use xlink:href="circle.svg#circle"></use>
+	</svg>
 	<!-- Polyfill for tag picture - IE10+ -->
 	<script src="scripts/picture-polyfill.js"></script>
 
