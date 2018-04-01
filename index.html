@@ -14,24 +14,18 @@
 	<section class="account">
 		<h2 class="visually-hidden">Account preferences</h2>
 		<div class="account__inner">
-			<div class="account__care">Custom Care: <a class="account__link" href="tel:888-23-4567">888-23-4567</a></div>
-			<div class="account__settings">
-				<div class="account__option">
-					<label class="visually-hidden" for="custom-option">Choose your language</label>
-					<select class="option option--list" id="custom-option" name="Language">
-						<option class="option__value" value="">$ US</option>
-						<option class="option__value" value="">$ RU</option>
-						<option class="option__value" value="">$ UA</option>
+			<div class="account__care">Custom Care: <a class="account__num" href="tel:888-23-4567">888-23-4567</a></div>
+			<div class="account__settings user">
+				<label class="visually-hidden" for="custom-option">Choose your language</label>
+				<div class="user__select">
+					<select class="user__lang" id="custom-option" name="Language">
+						<option class="user__choice" value="">$ US</option>
+						<option class="user__choice" value="">$ RU</option>
+						<option class="user__choice" value="">$ UA</option>
 					</select>
 				</div>
-				<a href="#" class="account__my option">
-					<img src="img/icon-user.png" class="option__item option__item--img" alt="Logo for account" width="25" height="15">
-					<span class="option__item">My account</span>
-				</a>
-				<a class="account__find option">
-					<i class="fa fa-search option__icon" aria-hidden="true"></i>
-					<span class="visually-hidden">Find some info</span>
-				</a>
+				<a class="user__account" href="#" >My account</a>
+				<a class="user__search" href="#"><span class="visually-hidden">Find some info</span></a>
 			</div>
 		</div>
 	</section> <!-- End of section - account -->

@@ -38,7 +38,7 @@ select::-ms-expand { /* For creating custom selects */
 	height: 10000px;
 
 	color: #373737;
-	font-family: Arial, open-sans, sans-serif;
+	font-family: "Arial", sans-serif;
 	font-style: normal;
 	font-size: 1.4rem;
 	line-height: 1.2;
@@ -57,7 +57,6 @@ select::-ms-expand { /* For creating custom selects */
 .link {
 	color: #000;
 	text-decoration: none;
-	
 }
 .link--nav {
 	position: relative;
@@ -107,7 +106,7 @@ select::-ms-expand { /* For creating custom selects */
 /* Block - button */
 .button {
 	color: #fff;
-	font-family: 'HelveticaNueueLTStd';
+	font-family: 'HelveticaNueueLTStd', "Arial", sans-serif;
 	font-weight: 100;
 	font-size: 1.6rem;
 	text-transform: uppercase;
@@ -158,84 +157,71 @@ select::-ms-expand { /* For creating custom selects */
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
-.account__option {
+.account__num,
+.account__care {
+	color: #fff;
+}
+.account__num {
+	text-decoration: none;
+}
+/* Block - user */
+.user__lang {
 	position: relative;
 
-	height: 3rem;
+	padding-left: 14px;
+	padding-right: 30px;
+	height: 100%;
 
-	overflow-y: hidden;
+	color: #fff;
+
+	background: #000;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none!important;
 }
-.account__option:after {
+.user__select {
+	position: relative;
+
+	border-left: 1px solid #444444;
+	border-right: 1px solid #444444;
+}
+.user__select:after {
 	position: absolute;
-	top: 40%;
-	right: 1.3rem;
+	right: 15px;
+	top: 60%;
+	transform: translate(0, -50%);
+
+	display: block;
+	content: "";
 
 	border: 5px solid transparent;
 	border-top: 5px solid #fff;
-	display: inline;
-
-	content: '';
 }
-.account__link {
-	color: #fff;
+.user__account {
+	padding-right: 14px;
+	padding-left: 38px;
+
 	text-decoration: none;
-}
-
-/* Block - option */
-.option {
-	height: 30px;
-	height: 3rem;
-	padding: 0 13px;
-	padding: 0 1.3rem;
-
 	color: #fff;
 
-	border-left: 1px solid #444;
-	border-right: 1px solid #444;
+	background-image: url(../img/user-icon.png);
+	background-repeat: no-repeat;
+	background-size: 14px;
+	background-position: 12px 50%;
+	border-right: 1px solid #444444;
+	border-left: 1px solid #444444;
 }
-.option:hover {
-	cursor: pointer;
-}
-.option__item {
-	display: inline-block;
-	vertical-align: middle;
-}
-.option__item:first-child {
-	padding-right: 10px;
-	padding-right: 1rem;
-}
-.option--list {
-	position: relative;
-
-	padding-right: 30px;
-	padding-right: 3rem;
-
-	-ms-appearance: none;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none !important;
-	background: #000;
-	border: none;
-	border-left: 1px solid #444;
-	/*outline: none;*/
-}
-.option__icon {
-	font-size: 1.8rem;
-
-	-webkit-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-.option__user {
-	color: #666;
-	font-size: 1.5rem;
-}
-.option__value {
-	line-height: 60px;
-}
-.account,
-.option--list {
-	color: #fff;
+.user__search {
+	width: 34px;
+	
+	background-image: url(../img/user-search.png);
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: center;
+	border-right: 1px solid #444444;
+	border-left: 1px solid #444444;
 }
 /*** Header section || Block - header ***/
 .header__inner {
@@ -397,7 +383,7 @@ select::-ms-expand { /* For creating custom selects */
 	width: 50%;
 
 	color: #78645d;
-	font-family: 'HelveticaNueueLTStd';
+	font-family: 'HelveticaNueueLTStd', "Arial", sans-serif;
 	text-align: center;
 }
 .slider__top-text {
@@ -408,7 +394,7 @@ select::-ms-expand { /* For creating custom selects */
 	padding: 0 8px;
 	padding: 0 .8rem;
 
-	font-family: LuxuryRoyaleJF, Arial, sens-serif;
+	font-family: "LuxuryRoyaleJF", "Arial", sans-serif;
 	font-size: 3.6rem;
 	line-height: 1;
 }
