@@ -103,7 +103,7 @@
 	}
 	/*** Account section || Block - account ***/
 	.account {
-		font-size: 1.5rem;
+		font-size: 30px;
 		height: auto;
 	}
 	.account__inner {
@@ -127,9 +127,11 @@
 		color: #838383;
 		line-height: 96px;
 		white-space: nowrap;
+		text-align: center;
 
 		background: #fafafa;
-		text-align: center;
+		border: none;
+
 	}
 	.account__care:after,
 	.account__care:before {
@@ -144,10 +146,10 @@
 		background: #fafafa;
 	}
 	.account__care:after {
-		right: -100%;
+		right: -99%;
 	}
 	.account__care:before {
-		left: -100%;
+		left: -99%;
 	}
 	.account__num {
 		color: #838383;
@@ -155,7 +157,33 @@
 	.account__settings {
 		height: 96px;
 	}
-	
+	/* Block - user */
+	.user__select,
+	.user__search {
+		border: none;
+	}
+	.user__select:after {
+		right: 4px;
+		top: 55%;
+
+		border-width: 10px;
+	}
+	.user__account {
+		padding-left: 80px;
+		padding-right: 25px;
+		
+		line-height: 96px;
+		white-space: nowrap;
+
+		background-size: 44px;
+		background-position: 20px 50%;
+		
+	}
+	.user__search {
+		width: 100px;
+
+		background-size: 44px;
+	}
 	/*** Header section || Block - header ***/
 	.header__inner {
 		max-width: 96%;
