@@ -267,3 +267,24 @@
 		padding: 0 1.5rem;
 	}
 }
+@media screen and (max-width: 480px) {
+	.account__care {
+		font-size: 22px;
+	}
+	.user {
+		font-size: 16px;
+	}
+	.user__select:after {
+		right: 12px; 
+
+		border-width: 7px;
+	}
+	.user__account {
+		padding-right: 10px;
+		padding-left: 60px;
+	}
+	.user__account,
+	.user__search {
+		background-size: 30px;
+	}
+}
