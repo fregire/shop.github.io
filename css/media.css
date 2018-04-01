@@ -158,6 +158,9 @@
 		height: 96px;
 	}
 	/* Block - user */
+	.user__select {
+		line-height: 96px;
+	}
 	.user__select,
 	.user__search {
 		border: none;
