@@ -200,7 +200,7 @@
 		width: 100%;
 	}
 	.header__left-content {
-		width: 100%;
+		width: 359px;
 	}
 	.header__search {
 		width: 100%;
@@ -223,7 +223,6 @@
 	.logo__img {
 		margin-top: 1rem;
 		display: inline-block;
-		width: 60%;
 		vertical-align: middle;
 	}
 	/*** Slider section || slider block ***/
@@ -271,6 +270,9 @@
 	}
 }
 @media screen and (max-width: 480px) {
+	.header__left-content {
+		width: 300px;
+	}
 	.account__care {
 		font-size: 22px;
 	}

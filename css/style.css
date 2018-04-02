@@ -250,7 +250,7 @@ select::-ms-expand { /* For creating custom selects */
 	display: none;
 }
 .header__left-content {
-	width: 12.1%;
+	width: 120px;
 }
 .header__right-content {
 	-webkit-box-align: center;
@@ -262,7 +262,7 @@ select::-ms-expand { /* For creating custom selects */
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
-	width: 83%;
+	flex: 1;
 }
 .header__search {
 	width: 26%;
