@@ -290,8 +290,9 @@ select::-ms-expand { /* For creating custom selects */
 }
 .header__burger {
 	color: white;
-
-	background: transparent;
+	
+	background: url(../img/burger.png) no-repeat;
+	background-position: center;	
 	border: none;
 }
 /* Block - logo */

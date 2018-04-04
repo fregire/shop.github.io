@@ -52,6 +52,13 @@
 	.header__search {
 		width: 21.3rem;
 	}
+	.header__burger {
+		width: 23px;
+		height: 20px;
+		padding: 0;
+
+		background-size: cover;
+	}
 	/* Block - nav */
 	.page-nav--mobile {
 		height: 0;
@@ -209,6 +216,10 @@
 	}
 	.header__form {
 		display: none;
+	}
+	.header__burger {
+		width: 33px;
+		height: 30px;
 	}
 	/* Block - logo */
 	.logo {
