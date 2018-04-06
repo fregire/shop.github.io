@@ -279,6 +279,10 @@
 		line-height: 3.5rem;
 		padding: 0 1.5rem;
 	}
+	/*** Section - media || Block - media ***/
+	.media {
+		display: none;
+	}
 }
 @media screen and (max-width: 480px) {
 	.header__left-content {
