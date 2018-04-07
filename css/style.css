@@ -912,8 +912,18 @@ select::-ms-expand { /* For creating custom selects */
 }
 .secondary-content__bottom-left-text,
 .secondary-content__bottom-content{
-    text-align:center;
-    text-transform:uppercase;
-    font-family:"HelveticaNueueLTStd","Arial",sans-serif;
-    font-stretch:condensed
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "HelveticaNueueLTStd","Arial",sans-serif;
+    font-stretch: condensed
 }
+
+/*** Shop section || Block - shop ***/
+.shop {
+		font-family: "HelveticaNueueLTStd", "Arial", sans-serif;
+}
+.shop__slider {
+	padding: 28px 0;
+}
+
+/* Block - shop-item */
