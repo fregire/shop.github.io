@@ -920,10 +920,72 @@ select::-ms-expand { /* For creating custom selects */
 
 /*** Shop section || Block - shop ***/
 .shop {
-		font-family: "HelveticaNueueLTStd", "Arial", sans-serif;
+	margin-top: 50px;
+	font-family: "Arial", sans-serif;
 }
 .shop__slider {
 	padding: 28px 0;
+
+	background: #fd926d;
+}
+.shop__tabs {
+	max-width: 1000px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
+}
+.shop__tab {
+	display: inline-block;
+	padding: 17px 20px;
+	margin: 0;
+
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #555555;
+}
+.shop__tab:hover {
+	cursor: pointer;
+}
+.shop__tab--active {
+	color: #fff;
+
+	background: #fd926d;
+}
+/* Block - shop-item */
+.shop-item {
+	width: 220px;
+
+	text-align: center;
+
+	background: #f7f7f7;
+	overflow: hidden;
+
+	transition: transform 400ms;
+}
+.shop-item__name,
+.shop-item__price {
+	margin: 0;
+}
+.shop-item__name {
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 5px 0;
 }
 
-/* Block - shop-item */
+.shop-item__price {
+	font-size: 22px;
+}
+.shop-item__btn {
+	padding: 8px;
+	padding-top: 10px;
+	width: 120px;
+	margin-bottom: 12px;
+	margin-top: 10px;
+
+	font-size: 13px;
+}
+.shop-item:hover {
+	transform: scale(1.08);
+	cursor: pointer;
+}
