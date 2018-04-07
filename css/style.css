@@ -219,7 +219,9 @@ select::-ms-expand { /* For creating custom selects */
 	position: absolute;
 	right: 15px;
 	top: 60%;
-	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	    -ms-transform: translate(0, -50%);
+	        transform: translate(0, -50%);
 
 	display: block;
 	content: "";
@@ -286,7 +288,9 @@ select::-ms-expand { /* For creating custom selects */
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 .header__search {
 	width: 26%;
@@ -650,10 +654,14 @@ select::-ms-expand { /* For creating custom selects */
 .social__item--another-bg {
 	background: #f7f7f7;
 }
+.social__link {
+	text-decoration: none;
+}
 /*** Media section || Block - media ***/
 .media {
 	height: 338px;
 	height: 33.8rem;
+	margin-top: 40px;
 }
 .media__inner {
 	display: -webkit-box;
@@ -672,8 +680,12 @@ select::-ms-expand { /* For creating custom selects */
 }
 .media__left-content {
 	margin-right: 2px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	background: #faf8ec url(../img/media/main.jpg) no-repeat;
 	background-position: -100px 0;
@@ -683,9 +695,16 @@ select::-ms-expand { /* For creating custom selects */
 	width: 50%;
 }
 .media__text {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	text-transform: uppercase;
 	text-align: center;
@@ -752,7 +771,9 @@ select::-ms-expand { /* For creating custom selects */
 .media__text--left-content {
 	width: 60%;
 	margin-left: auto;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 }
 /* Block - secondary */
 .secondary-content {
@@ -771,8 +792,12 @@ select::-ms-expand { /* For creating custom selects */
 }
 .secondary-content__top {
 	margin-bottom: 2px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	background: #93cec3 url(../img/media/secondary-content-1.jpg) no-repeat;
 	background-position: 0 -20px;
@@ -783,12 +808,18 @@ select::-ms-expand { /* For creating custom selects */
 }
 
 .secondary-content__bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .secondary-content__bottom-left {
 	margin-right: 2px;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
 	background: #e7e7e7 url(../img/media/secondary-content-2.jpg) no-repeat;
 	background-position: center -20px;
@@ -799,10 +830,14 @@ select::-ms-expand { /* For creating custom selects */
 }
 .secondary-content__bottom-left,
 .secondary-content__bottom-right {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100%;
 	width: 50%;
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 .secondary-content__text {
 	position: relative;
@@ -811,9 +846,15 @@ select::-ms-expand { /* For creating custom selects */
 	height: 132px;
 	margin-left: 27px;
 	padding: 22px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 
 	font-family: "HelveticaNueueLTStd", "Arial", sans-serif;
 	text-align: center;
@@ -826,7 +867,9 @@ select::-ms-expand { /* For creating custom selects */
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 
 	display: block;
 	content: "";
