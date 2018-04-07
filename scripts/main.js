@@ -3,7 +3,8 @@
 		current = 0,
 		nextBtn = document.querySelector('.js-slide__next'),
 		prevBtn = document.querySelector('.js-slide__prev'),
-		dots    = document.querySelectorAll('.slider__dot');
+		dots    = document.querySelectorAll('.slider__dot'),
+		slider = document.querySelector("");
 
 	nextBtn.addEventListener('click', function() {
 		moveNextSlide(slides, 'slider__slide--active', dots, 'slider__dot--active');

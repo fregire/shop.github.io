@@ -18,8 +18,11 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="libs/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+
 </head>
 <body class="page">
 	<section class="account">
@@ -186,6 +189,7 @@
 			</div>
 		</section>
 		<section class="media">
+			<h2 class="visually-hidden">Media section</h2>
 			<div class="media__inner">
 				<div class="media__left-content">
 					<div class="media__text media__text--left-content">
@@ -219,9 +223,25 @@
 				</div>
 			</div>
 		</section>
+		<section class="shop">
+			<h2 class="visually-hidden">Shop slider with market items</h2>
+			<div class="shop__slider">
+				<div class="shop-item">
+					<div class="shop-item__pict">
+						
+					</div>
+					<p class="shop-item__name">Feel tank</p>
+					<p class="shop-item__price">$76.95</p>
+					<button class="button shop-item__button">Add to cart</button>
+				</div>
+			</div>
+		</section>
 	</main>	
 	<!-- Polyfill for tag picture - IE10+ -->
 	<script src="scripts/picture-polyfill.js"></script>
+	
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/owl.carousel.min.js"></script>
 
 	<script src="scripts/main.js"></script>
 	<script src="scripts/menu.js"></script>
